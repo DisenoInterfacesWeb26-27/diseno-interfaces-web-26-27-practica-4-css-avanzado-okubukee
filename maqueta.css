@@ -1,0 +1,118 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 12px;
+  background-color: #0b0f17;
+  font-family: Arial, sans-serif;
+}
+
+.cabecera,
+.menu,
+.nav1,
+.nav2,
+.cuerpo,
+.banner,
+.footer {
+  background-color: #dce8fc;
+  border: 1px solid #6b8ec7;
+  color: #111827;
+  padding: 16px;
+  text-align: center;
+}
+
+.cabecera,
+.menu,
+.contenedor-central {
+  margin-bottom: 12px;
+}
+
+.nav2 {
+  margin-bottom: 14px;
+}
+
+.contenedor-central::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+.nav1 {
+  float: left;
+  width: 22%;
+  margin-right: 1.5%;
+  min-height: 360px;
+}
+
+.nav2 {
+  float: left;
+  width: 76.5%;
+  margin-bottom: 14px;
+}
+
+.cuerpo {
+  float: left;
+  width: 50.5%;
+  margin-right: 1.5%;
+  min-height: 290px;
+}
+
+.banner {
+  float: left;
+  width: 24.5%;
+  min-height: 290px;
+}
+
+.footer {
+  clear: both;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  body {
+    font-family: Calibri, sans-serif;
+  }
+
+  .nav1 {
+    width: 15%;
+    margin-right: 2%;
+    min-height: 300px;
+  }
+
+  .nav2 {
+    display: none;
+  }
+
+  .cuerpo {
+    width: 83%;
+    margin-bottom: 12px;
+    margin-right: 0;
+    min-height: 300px;
+  }
+
+  .banner {
+    float: none;
+    clear: both;
+    width: 100%;
+    min-height: auto;
+    margin-top: 12px;
+  }
+}
+
+@media (max-width: 700px) {
+  body {
+    font-family: "Times New Roman", serif;
+  }
+
+  .nav1,
+  .nav2,
+  .cuerpo,
+  .banner {
+    float: none;
+    display: block;
+    width: 100%;
+    margin: 0 0 12px 0;
+    min-height: auto;
+  }
+}

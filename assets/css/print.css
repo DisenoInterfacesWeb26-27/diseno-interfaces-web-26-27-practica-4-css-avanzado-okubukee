@@ -1,0 +1,16 @@
+
+header,
+footer,
+nav,
+aside {
+  display: none;
+}
+
+main {
+  display: block;
+}
+
+body {
+  background-color: #ffffff;
+  max-width: none;
+}

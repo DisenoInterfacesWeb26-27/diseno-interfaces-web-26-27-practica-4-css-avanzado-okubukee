@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contacta con Tienda Ejemplo en Alicante: formulario de contacto, teléfono, email y dirección.">
+  <meta name="keywords" content="contacto, teléfono, formulario, Alicante, Tienda Ejemplo">
+  <meta name="author" content="Tienda Ejemplo S.L.">
+  <meta name="robots" content="index, follow">
+  <title>Contacto - Tienda Ejemplo en Alicante</title>
+  <link rel="icon" href="assets/images/logo.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/print.css" media="print">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><img src="assets/images/logo.svg" alt="Logotipo de Tienda Ejemplo" width="80" height="80"></a>
+    <h1>Tienda Ejemplo</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+      <li><a href="flex.html">Flex</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <section>
+      <h2>Contacto</h2>
+
+      <article>
+        <h3>Formulario de contacto</h3>
+
+        <form action="#" method="post">
+
+          <p>
+            <label for="nombre">Nombre:</label><br>
+            <input type="text" id="nombre" name="nombre"
+                   placeholder="Tu nombre (solo letras y números)"
+                   maxlength="40"
+                   pattern="[A-Za-z0-9ÁÉÍÓÚÜáéíóúüÑñ]+"
+                   title="Solo se permiten letras y números (máximo 40 caracteres), sin espacios ni símbolos"
+                   required autofocus>
+          </p>
+
+          <p>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email"
+                   placeholder="ejemplo@correo.com"
+                   required>
+          </p>
+
+          <p>
+            <label for="edad">Edad:</label><br>
+            <input type="number" id="edad" name="edad"
+                   placeholder="Entre 18 y 99"
+                   min="18" max="99"
+                   required>
+          </p>
+
+          <p>
+            <label for="telefono">Teléfono:</label><br>
+            <input type="tel" id="telefono" name="telefono"
+                   placeholder="600123456"
+                   pattern="[0-9]{9}"
+                   title="Introduce un teléfono de 9 dígitos"
+                   required>
+          </p>
+
+          <p>
+            <label for="consulta">Consulta:</label><br>
+            <textarea id="consulta" name="consulta"
+                      rows="5" cols="40"
+                      placeholder="Escribe aquí tu consulta"
+                      required></textarea>
+          </p>
+
+          <p>
+            <input type="checkbox" id="privacidad" name="privacidad" required>
+            <label for="privacidad">
+              He leído y acepto la
+              <a href="privacidad-cookies.html" target="_blank">política de privacidad y cookies</a>.
+            </label>
+          </p>
+
+          <p>
+            <button type="submit">Enviar</button>
+          </p>
+
+        </form>
+      </article>
+
+      <article>
+        <h3>Datos de contacto</h3>
+        <p><strong>Tienda Ejemplo S.L.</strong></p>
+        <p>Calle Ejemplo, 1 - 03001 Alicante</p>
+        <p>Teléfono: <a href="tel:+34600123456">600 123 456</a></p>
+        <p>Email: <a href="mailto:info@tiendaejemplo.com">info@tiendaejemplo.com</a></p>
+      </article>
+    </section>
+
+    <aside>
+      <h2>Enlaces</h2>
+      <h3>Historial</h3>
+      <ul>
+        <li><a href="#">Pedidos anteriores</a></li>
+        <li><a href="#">Productos vistos</a></li>
+      </ul>
+      <h3>Enlaces interesantes</h3>
+      <ul>
+        <li><a href="https://developer.mozilla.org/es/" target="_blank">MDN Web Docs</a></li>
+        <li><a href="https://www.w3schools.com/" target="_blank">W3Schools</a></li>
+      </ul>
+    </aside>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Tienda Ejemplo S.L.</p>
+    <p><a href="privacidad-cookies.html">Política de privacidad y cookies</a></p>
+    <p>
+      <a href="https://wa.me/34600123456" target="_blank"><img src="assets/images/whatsapp.svg" alt="WhatsApp" width="32" height="32"></a>
+      <a href="https://www.instagram.com/" target="_blank"><img src="assets/images/instagram.svg" alt="Instagram" width="32" height="32"></a>
+      <a href="https://x.com/" target="_blank"><img src="assets/images/x.svg" alt="X" width="32" height="32"></a>
+      <a href="https://www.facebook.com/" target="_blank"><img src="assets/images/facebook.svg" alt="Facebook" width="32" height="32"></a>
+    </p>
+    <iframe src="https://www.openstreetmap.org/export/embed.html?bbox=-0.4910%2C38.3402%2C-0.4710%2C38.3502&amp;layer=mapnik&amp;marker=38.3452%2C-0.4810" width="400" height="300" title="Mapa con la ubicación de Tienda Ejemplo"></iframe>
+  </footer>
+
+</body>
+</html>

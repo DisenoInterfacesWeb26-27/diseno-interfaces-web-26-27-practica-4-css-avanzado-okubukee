@@ -1,0 +1,440 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1em;
+  background-color: #f4f4f4;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  line-height: 1.5;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  padding: 1em 0;
+  background-color: #f4f4f4;
+}
+
+h1,
+h2,
+h3,
+h4 {
+  color: #1f3b57;
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 2em;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+h2 {
+  margin-bottom: 0.5em;
+  font-size: 1.5em;
+}
+
+h3 {
+  margin-bottom: 0.4em;
+  font-size: 1.2em;
+}
+
+h4 {
+  font-size: 1em;
+}
+
+nav {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: #1f3b57;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+}
+
+nav a {
+  display: block;
+  padding: 0.75em 1.5em;
+  font-size: 1em;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+main {
+  display: flex;
+  gap: 1.5em;
+  margin: 1.5em 0;
+}
+
+section {
+  flex: 3;
+  padding: 1em;
+  background-color: #ffffff;
+  color: #333333;
+}
+
+article {
+  margin-bottom: 1.5em;
+}
+
+aside {
+  flex: 1;
+  padding: 1em;
+  background-color: #e3eaf1;
+  color: #333333;
+  font-size: 0.95em;
+}
+
+aside ul {
+  margin-bottom: 1em;
+  list-style: square inside;
+}
+
+aside li {
+  padding: 0.3em 0;
+  border-bottom: 1px solid #c5d3e0;
+}
+
+address {
+  background-color: #ffffff;
+  color: #333333;
+  font-style: normal;
+}
+
+footer {
+  padding: 1em;
+  background-color: #1f3b57;
+  color: #ffffff;
+  font-size: 0.9em;
+  text-align: center;
+}
+
+footer p {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+
+footer img {
+  margin-right: 0.5em;
+}
+
+footer iframe {
+  max-width: 100%;
+  border: 0;
+}
+
+footer a[href*="wa.me"] {
+  position: fixed;
+  right: 1em;
+  bottom: 1em;
+  z-index: 10;
+}
+
+p {
+  margin-bottom: 0.75em;
+  color: #333333;
+  font-size: 1em;
+  text-align: justify;
+}
+
+strong {
+  color: #1f3b57;
+  font-weight: bold;
+}
+
+ul,
+li {
+  font-size: 1em;
+}
+
+a:link {
+  color: #1f3b57;
+}
+
+a:visited {
+  color: #6a4c93;
+}
+
+a:hover {
+  color: #e07a1f;
+}
+
+a:active {
+  color: #b85f12;
+}
+
+nav a:link,
+nav a:visited {
+  background-color: #1f3b57;
+  color: #ffffff;
+}
+
+nav a:hover {
+  background-color: #e07a1f;
+  color: #ffffff;
+}
+
+nav a:active {
+  background-color: #b85f12;
+  color: #ffffff;
+}
+
+aside a:link,
+aside a:visited {
+  color: #1f3b57;
+  text-decoration: none;
+}
+
+aside a:hover {
+  color: #e07a1f;
+  text-decoration: underline;
+}
+
+aside a:active {
+  color: #b85f12;
+}
+
+footer a:link,
+footer a:visited {
+  color: #ffffff;
+}
+
+footer a:hover {
+  color: #e07a1f;
+}
+
+footer a:active {
+  color: #f4c095;
+}
+
+article a:link,
+article a:visited {
+  color: #1f3b57;
+  font-weight: bold;
+}
+
+article a:hover {
+  color: #e07a1f;
+}
+
+article a:active {
+  color: #b85f12;
+}
+
+table {
+  width: 100%;
+  margin: 1em 0;
+  border: 2px solid #1f3b57;
+  border-collapse: collapse;
+  table-layout: auto;
+  background-color: #ffffff;
+  font-size: 0.95em;
+}
+
+caption {
+  caption-side: bottom;
+  padding: 0.5em;
+  color: #555555;
+  font-size: 0.9em;
+  font-style: italic;
+  text-align: center;
+}
+
+th,
+td {
+  padding: 0.5em;
+  border: 1px solid #1f3b57;
+  text-align: center;
+}
+
+th {
+  color: #ffffff;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+td {
+  color: #333333;
+}
+
+thead tr:first-child {
+  background-color: #1f3b57;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #ffffff;
+}
+
+tbody tr:nth-child(even) {
+  background-color: #e3eaf1;
+}
+
+form {
+  max-width: 30em;
+  padding: 1em;
+  border: 1px solid #1f3b57;
+  background-color: #e3eaf1;
+}
+
+form p {
+  margin-bottom: 1em;
+  text-align: left;
+}
+
+label {
+  color: #1f3b57;
+  font-size: 0.95em;
+  font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="tel"],
+textarea {
+  width: 100%;
+  padding: 0.5em;
+  border: 1px solid #999999;
+  background-color: #ffffff;
+  color: #333333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input:focus,
+textarea:focus {
+  border-color: #e07a1f;
+  outline: 2px solid #e07a1f;
+}
+
+input[type="checkbox"] {
+  margin-right: 0.5em;
+}
+
+input[type="checkbox"] + label {
+  font-weight: normal;
+}
+
+button {
+  padding: 0.6em 2em;
+  border: none;
+  background-color: #1f3b57;
+  color: #ffffff;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1em;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #e07a1f;
+}
+
+nav {
+  box-shadow: 0 6px 8px -2px rgba(0, 0, 0, 0.4);
+}
+
+img:not([alt]) {
+  border: 3px solid red;
+}
+
+a[href$=".pdf"]::after {
+  content: "";
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  margin-left: 0.3em;
+  vertical-align: middle;
+  background: url("https://www.shareicon.net/data/16x16/2016/08/13/808584_document_512x512.png") no-repeat center;
+}
+
+nav a,
+button {
+  transition: background-color 0.4s ease, color 0.4s ease;
+}
+
+button {
+  transition: background-color 0.4s ease, transform 0.3s ease;
+}
+
+button:hover {
+  transform: scale(1.1) rotate(-2deg);
+}
+
+.contenedor-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1em;
+  padding: 1em;
+  background-color: #e3eaf1;
+}
+
+.caja-flex {
+  flex: 1 1 150px;
+  padding: 1em;
+  background-color: #1f3b57;
+  color: #ffffff;
+  text-align: center;
+}
+
+.caja-flex:nth-child(2) {
+  padding: 2.5em 1em;
+}
+
+@media (min-width: 700px) and (max-width: 1200px) {
+  body {
+    max-width: 800px;
+  }
+
+  aside {
+    font-size: 0.85em;
+  }
+}
+
+@media (max-width: 700px) {
+  main {
+    flex-direction: column;
+  }
+
+  header {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  nav ul {
+    flex-direction: column;
+  }
+
+  nav a {
+    text-align: center;
+  }
+
+  table {
+    font-size: 0.8em;
+  }
+
+  footer iframe {
+    width: 100%;
+  }
+}
